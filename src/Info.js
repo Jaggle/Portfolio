@@ -8,7 +8,7 @@ const Info = () => {
       <Row>
         <Col md={8}>
           <div className="info-header">
-            <h1>Info</h1>
+            <h2>Info</h2>
             <div className="info-content">
               <p>
                 I'm a reliable and kind professional with a passion for creative
@@ -32,10 +32,10 @@ const Info = () => {
       </Row>
       <Row>
         <Col xs={10} sm={8} md={6}>
-          <h2>
+          <h1>
             Do I have your attention? <br />
             Let's do this!
-          </h2>
+          </h1>
         </Col>
       </Row>
       <Row>

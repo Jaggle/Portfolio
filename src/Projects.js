@@ -37,7 +37,7 @@ function Projects() {
     <Container fluid id="projects">
       <Row>
         <Col lg={6} md={6} className="proj-col">
-          <h1>Projects</h1>
+          <h2>Projects</h2>
           <ListGroup>
             {projects.map((project) => (
               <ListGroup.Item
