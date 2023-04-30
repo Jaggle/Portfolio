@@ -66,7 +66,7 @@ function App() {
   return (
     <div className="App">
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-        <Container>
+        <Container fluid>
           <Navbar.Brand href="#home">Jason Miller</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon "></span>
@@ -109,7 +109,7 @@ function App() {
                   <Linkedin size={32} />
                 </a>
               </div>
-              <a href="#contact">
+              <a href="#info">
                 <button className="vvd">
                   <span>Let's Connect</span>
                 </button>

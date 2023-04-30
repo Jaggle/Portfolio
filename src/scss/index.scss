@@ -1,17 +1,28 @@
 /* Navbar styling */
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+#root,
+.App,
+#home,
+#projects,
+#info,
+#about {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
 /*********************************************/
 /*                  NavBar                   */
 /*********************************************/
 
 .navbar {
   padding: 18px 0;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
   z-index: 9999;
   transition: 0.32 ease-in-out;
+  padding: 0 4%;
 
   .scrolled {
     padding: 0 0;
@@ -116,7 +127,6 @@
   }
 }
 
-/* Header styling */
 .App-header {
   height: 100vh;
   display: flex;
