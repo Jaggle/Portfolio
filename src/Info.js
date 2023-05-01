@@ -1,6 +1,12 @@
 import React from "react";
 import { Container, Row, Col, ListGroup } from "react-bootstrap";
 import "./scss/info.scss";
+import {
+  Linkedin,
+  EnvelopeFill,
+  ArrowUpRight,
+  Github,
+} from "react-bootstrap-icons";
 
 const Info = () => {
   return (
@@ -38,14 +44,29 @@ const Info = () => {
           </h1>
         </Col>
       </Row>
-      <Row>
+      <Row id="contact">
         <Col xs={10} sm={8} md={6}>
           <ListGroup>
             <ListGroup.Item>
-              <a href="/">link</a>
+              <a href="mailto:JasonMiller503@gmail.com?subject=I%20saw%20your%20website!&body=Hey%20Jason!%20Your%20website%20is%20awesome!%20I'd%20love%20to%20work%20with%20you!">
+                <EnvelopeFill></EnvelopeFill>
+                JasonMiller503@gmail.com
+                <ArrowUpRight></ArrowUpRight>
+              </a>
             </ListGroup.Item>
             <ListGroup.Item>
-              <a href="/">link</a>
+              <a href="https://www.linkedin.com/in/jason-miller-01/">
+                <Linkedin></Linkedin>
+                /in/jason-miller-01
+                <ArrowUpRight></ArrowUpRight>
+              </a>
+            </ListGroup.Item>
+            <ListGroup.Item>
+              <a href="https://github.com/Jaggle/">
+                <Github></Github>
+                github.com/Jaggle
+                <ArrowUpRight></ArrowUpRight>
+              </a>
             </ListGroup.Item>
           </ListGroup>
         </Col>

@@ -14,33 +14,6 @@ import "./scss/index.scss";
 import Info from "./Info";
 import Background from "./background";
 
-const projects = [
-  {
-    id: 1,
-    title: "Project 1",
-    image: "https://via.placeholder.com/350x150",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat nisl id sapien consectetur, a sodales ipsum blandit.",
-    link: "https://example.com/project1",
-  },
-  {
-    id: 2,
-    title: "Project 2",
-    image: "https://via.placeholder.com/350x150",
-    description:
-      "Sed volutpat nisl id sapien consectetur, a sodales ipsum blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    link: "https://example.com/project2",
-  },
-  {
-    id: 3,
-    title: "Project 3",
-    image: "https://via.placeholder.com/350x150",
-    description:
-      "Aenean tempor est eu felis luctus, non commodo enim rhoncus. Integer quis velit vitae nulla vehicula sagittis in eget augue.",
-    link: "https://example.com/project3",
-  },
-];
-
 function App() {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
@@ -109,7 +82,7 @@ function App() {
                   <Linkedin size={32} />
                 </a>
               </div>
-              <a href="#info">
+              <a href="#contact">
                 <button className="vvd">
                   <span>Let's Connect</span>
                 </button>
@@ -125,7 +98,10 @@ function App() {
       <Projects></Projects>
       <Info></Info>
       <footer className="App-footer" id="about">
-        <p>Copyright &copy; 2023</p>
+        <div>Copyright &copy; 2023</div>
+        <div>
+          This website was made for a AI assisted development experiment!
+        </div>
       </footer>
     </div>
   );
