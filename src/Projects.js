@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { Container, Row, Col, ListGroup, Image } from "react-bootstrap";
 import "./scss/projects.scss";
-
+import { Link } from "react-router-dom";
 const projects = [
   {
     id: 1,
+    route: "/Portfolio",
     title: "Portfolio",
     image: "https://via.placeholder.com/350x150",
     description: "AI Development Exercise",
@@ -12,6 +13,7 @@ const projects = [
   },
   {
     id: 2,
+    route: "/ArcticFX",
     title: "ArcticFX Graphics",
     image: "https://via.placeholder.com/350x150",
     description: "Ecommerce Platform",
@@ -19,6 +21,7 @@ const projects = [
   },
   {
     id: 3,
+    route: "/NightSky",
     title: "Night Sky Shader",
     image: "https://via.placeholder.com/350x150",
     description: "Unity Shader Material",
@@ -46,9 +49,11 @@ function Projects() {
                 active={selectedProjectId === project.id}
                 onMouseOver={() => handleProjectHover(project.id)}
               >
-                <div className="title">{project.title}</div>
-                <div className="desc">{project.description}</div>
-                <div className="topic">{project.topic}</div>
+                <Link to={project.route}>
+                  <div className="title">{project.title}</div>
+                  <div className="desc">{project.description}</div>
+                  <div className="topic">{project.topic}</div>
+                </Link>
               </ListGroup.Item>
             ))}
           </ListGroup>

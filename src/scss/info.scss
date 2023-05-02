@@ -17,13 +17,13 @@
   }
 
   .list-group {
-    margin-bottom: 10%;
+    margin-bottom: 15%;
     .list-group-item {
       all: unset;
       cursor: pointer;
       border: none;
       border-top: 1px solid rgb(153, 153, 153);
-      padding: 10px 0;
+      padding: 2% 0;
 
       &:last-of-type {
         border-bottom: 1px solid rgb(153, 153, 153);

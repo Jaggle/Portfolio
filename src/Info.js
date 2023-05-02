@@ -45,7 +45,7 @@ const Info = () => {
         </Col>
       </Row>
       <Row id="contact">
-        <Col xs={10} sm={8} md={6}>
+        <Col xs={11} sm={9} md={7}>
           <ListGroup>
             <ListGroup.Item>
               <a href="mailto:JasonMiller503@gmail.com?subject=I%20saw%20your%20website!&body=Hey%20Jason!%20Your%20website%20is%20awesome!%20I'd%20love%20to%20work%20with%20you!">

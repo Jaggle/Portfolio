@@ -62,18 +62,13 @@
   transition: 0.32 ease-in-out;
   padding: 0 4%;
 
-  .scrolled {
-    padding: 0 0;
-    background-color: #fff;
-  }
-
   a.navbar-brand {
     color: #fff;
     font-size: 30px;
     font-weight: 600;
   }
 
-  .navbar-nav .nav-link.navbar-link {
+  .navbar-nav .nav-link {
     font-weight: 400;
     color: #fff;
     letter-spacing: 0.8px;
@@ -81,8 +76,7 @@
     font-size: 18px;
     opacity: 0.75;
 
-    &:hover,
-    &:active {
+    &:hover {
       opacity: 1;
     }
   }
@@ -165,6 +159,10 @@
   }
 }
 
+.App {
+  position: relative;
+}
+
 .App-header {
   height: 100vh;
   display: flex;
@@ -175,10 +173,24 @@
 }
 
 .App-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f6f3f3;
+  background-color: transparent;
   border-top: 1px solid #eeebebd7;
   padding: 5px 4%;
+}
+
+@media (max-width: 768px) {
+  .App-footer {
+    padding: 5px;
+
+    div {
+      font-size: 10px;
+    }
+  }
 }
